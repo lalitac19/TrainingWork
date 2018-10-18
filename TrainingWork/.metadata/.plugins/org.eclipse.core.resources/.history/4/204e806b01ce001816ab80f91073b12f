@@ -1,0 +1,37 @@
+package com.qa.Game;
+
+public class Game {
+	private int xPos;
+	private int yPos;
+	
+	public void moveNorth() {
+		yPos += 10; 
+	}
+	
+	public void moveSouth() {
+		
+	}
+	public void moveEast() {
+		
+	}
+	
+	public void moveWest() {
+		
+	}
+	public int getXPosition() {
+		return this.xPos;
+	}
+	
+	public int getYPosition() {
+		return this.yPos;
+	}
+	
+	public void setXPositon(int i) {
+		this.xPos = i;
+	}
+	
+	public void setYPositon(int i) {
+		this.yPos = i;
+	}
+	
+}

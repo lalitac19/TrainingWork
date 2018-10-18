@@ -1,0 +1,56 @@
+package com.qa.Library;
+
+public class Books extends Library {
+
+	private int ISBN; 
+	private String author; 
+	private String publisher;
+	
+	public Books (int ISBN, String name, String author, String pub) {
+		this.setType("Book");
+		this.setISBN(ISBN); 
+		this.setName(name); 
+		this.setAuthor(author); 
+		this.setPublisher(pub); 
+		this.setID();  
+	}
+
+	public String getAuthor() {
+		return author;
+	}
+
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+
+	public int getISBN() {
+		return ISBN;
+	}
+
+	public void setISBN(int iSBN) {
+		ISBN = iSBN;
+	}
+
+	public String getPublisher() {
+		return publisher;
+	}
+
+	public void setPublisher(String publisher) {
+		this.publisher = publisher;
+	}
+
+	/*
+	@Override
+	public void updateItem(int ID) {
+		// TODO Auto-generated method stub
+	}
+
+
+	@Override
+	public void addItem(String type, String name) {
+		// TODO Auto-generated method stub
+		
+	}*/
+	
+	
+}

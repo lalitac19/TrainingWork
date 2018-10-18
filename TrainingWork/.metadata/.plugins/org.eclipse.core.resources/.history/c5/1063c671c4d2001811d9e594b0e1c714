@@ -1,0 +1,67 @@
+package com.qa.Library;
+
+import java.util.ArrayList;
+
+public abstract class Library {
+
+	
+	private String type;
+	private String name; 
+	private int ID;
+	private int size = 0;
+	
+	ArrayList <Object> checkedOutItems = new ArrayList <Object>();
+	static ArrayList <Object> items = new ArrayList <Object> ();
+	
+	//public abstract void updateItem (int ID);
+	//public abstract void addItem(String type, String name);
+	
+	public void addToList(Object item) {
+		items.add(item);
+		size +=1;
+		System.out.println(size);
+	}
+	
+	public int checkOut(Library item) {
+		checkedOutItems.add(item);
+		return checkedOutItems.size();
+	}
+	
+	public int removeItem(Library item) {
+		items.remove(item);
+		return items.size();
+	}
+	
+	public ArrayList<Object> getCheckedOutList(){
+		return checkedOutItems; 
+	}
+	
+	public static void printItemList(){
+		System.out.println(items);
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getID() {
+		return ID;
+	}
+
+	public void setID() {
+		this.ID = size + 2;
+	}
+
+}

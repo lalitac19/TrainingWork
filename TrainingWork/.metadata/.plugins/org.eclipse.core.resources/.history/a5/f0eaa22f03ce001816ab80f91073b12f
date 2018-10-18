@@ -1,0 +1,46 @@
+package com.qa.Game;
+
+public class Game {
+	private int xPos;
+	private int yPos;
+	
+	public void moveNorth() {
+		yPos += 10; 
+	}
+	
+	public void moveSouth() {
+		yPos -= 10;
+	}
+	public void moveEast() {
+		xPos += 10; 
+	}
+	
+	public void moveWest() {
+		xPos -= 10;
+	}
+	public int getXPosition() {
+		return this.xPos;
+	}
+	
+	public int getYPosition() {
+		return this.yPos;
+	}
+	
+	public void setXPositon(int i) {
+		this.xPos = i;
+	}
+	
+	public void setYPositon(int i) {
+		this.yPos = i;
+	}
+	
+	public void printingPos() {
+		System.out.println("You are position " + getXPosition() + " , " + getYPosition());
+	}
+	
+	public void instructions() {
+		System.out.println("You are in the middle of an infinite grey swamp. \nThere are many features around you.  \nType in 'north', 'south', 'east' or 'west' to move around the swamp!");
+		
+	}
+	
+}

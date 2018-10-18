@@ -1,0 +1,69 @@
+package com.qa.Library;
+
+import java.util.ArrayList;
+import java.util.UUID;
+
+public abstract class Library {
+	
+	private String type;
+	private String name; 
+	private UUID ID;
+	private int counter;
+	
+	ArrayList <Object> checkedOutItems = new ArrayList <Object>();
+	static ArrayList <Object> items = new ArrayList <Object> ();
+	
+	//public abstract void updateItem (int ID);
+	//public abstract void addItem(String type, String name);
+	
+	public void addToList(Object item) {
+		items.add(item);
+		counter =+1;
+	//System.out.println(this.getID());
+	}
+	
+	public int checkOut(Library item) {
+		checkedOutItems.add(item);
+		return checkedOutItems.size();
+	}
+	
+	public int removeItem(Library item) {
+		items.remove(item);
+		return items.size();
+	}
+	
+	public ArrayList<Object> getCheckedOutList(){
+		return checkedOutItems; 
+	}
+	
+	public static void printItemList(){
+		System.out.println(items);
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public UUID getID() {
+		return ID;
+	}
+
+	public void setID() {
+		 UUID id = UUID.randomUUID();
+		// System.out.println(id);
+		 this.ID = id; 
+	}
+
+}

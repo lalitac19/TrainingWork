@@ -1,0 +1,30 @@
+package com.qa.Library;
+
+public class Books extends Library {
+
+	private int ISBN; 
+	private String author; 
+	private String publisher;
+	
+	public Books (int ISBN, String name, String author, String pub) {
+		this.type = "Book";
+		this.ISBN = ISBN; 
+		this.name = name; 
+		this.author = author; 
+		this.publisher = pub; 
+	}
+
+	@Override
+	public void updateItem(int ID) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void addItem(String type, String name) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+}

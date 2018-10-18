@@ -1,0 +1,9 @@
+package com.qa.Library;
+
+public class People {
+
+	
+	public void registerPerson(String name ) {
+		
+	}
+}

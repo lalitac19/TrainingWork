@@ -1,0 +1,10 @@
+package com.qa.Library;
+
+public class People extends Library{
+
+	private 
+	
+	public void registerPerson(String name ) {
+		
+	}
+}

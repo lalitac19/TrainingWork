@@ -1,0 +1,16 @@
+package com.qa.Library;
+
+public class Books extends Library {
+
+	private String ISBN; 
+	private String author; 
+	private String publisher;
+	
+	public Books (String ISBN, String name, String author, String pub) {
+		this.type = "Book";
+		this.ISBN = ISBN; 
+		this.name = name; 
+		this.author = author; 
+		this.publisher = pub; 
+	}
+}
